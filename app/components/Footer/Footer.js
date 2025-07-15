@@ -21,7 +21,7 @@ const Footer = () => {
 
                     {/* Social Media Section */}
                     <div className="space-y-4">
-                        <h1 className="text-xl font-semibold mb-2">Follow Us</h1>
+                        <h2 className="text-xl font-semibold mb-2">Follow Us</h2>
                         <div className="flex gap-6">
                             <a href="https://www.instagram.com/zinlydia_mua/" className="hover:text-yellow-400 transition-all duration-300">
                                 <FaInstagram className="text-3xl" />
@@ -37,7 +37,7 @@ const Footer = () => {
 
                     {/* Contact Info Section */}
                     <div className="space-y-4">
-                        <h1 className="text-xl font-semibold mb-2">Contact Us</h1>
+                        <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
                         <ul className="space-y-3 text-gray-300">
                             {/* <li className="flex items-center gap-3">
                                 <FaPhone className="text-yellow-400" />

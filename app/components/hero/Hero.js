@@ -21,25 +21,19 @@ const Hero = () => {
 
     return (
         <>
-            <section>
+            <section id="hero" aria-label="Profil Instruktur Zumba Jakarta">
                 <div className='container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative'>
                     {/* brand info */}
                     <div className='text-center md:text-left flex flex-col justify-center items-center md:items-start py-14 md:py-0 font-playfair'>
                         <motion.h1
-                            variants={SlideRight(0.6)}
-                            initial='hidden'
-                            animate='visible'
-                            className='text-5xl lg:text-7xl font-bold leading-none mb-5'>
-                            Hello, I`m<span className='text-primary'> Lidya Rachmawati</span>
-                        </motion.h1>
-                        <motion.p
                             variants={SlideRight(1.2)}
                             initial="hidden"
                             animate="visible"
-                            className="text-gray-600 xl:max-w-[500px] mb-6"
+                            className="text-gray-600 xl:max-w-[500px] mb-6 text-2xl"
                         >
                             Saya adalah <span className="text-primary font-bold font-playfair">Instruktur Zumba</span> dan <span className="text-primary font-bold font-playfair">Senam Aerobik</span> di Jakarta dengan pengalaman bertahun-tahun memimpin sesi <span className="text-primary font-bold font-playfair">Zumba</span> dan <span className="text-primary font-bold font-playfair">senam aerobik</span>
-                        </motion.p>
+                        </motion.h1>
+                        
                         <motion.button
                             onClick={handleScrollToContact}
                             variants={SlideRight(1.5)}
@@ -58,7 +52,7 @@ const Hero = () => {
                             variants={SlideLeft(2)}
                             initial='hidden'
                             animate='visible'
-                            src={HeroImage} alt='' className='w-[350px] md:w-[550px] xl:w-[700px] drop-shadow' />
+                            src={HeroImage} alt='Lidya Rachmawati - Instruktur Zumba dan Aerobik di Jakarta' className='w-[350px] md:w-[550px] xl:w-[700px] drop-shadow' />
 
                     </div>
                 </div>

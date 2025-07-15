@@ -12,9 +12,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Instruktur Senam Zumba Aerobik Jakarta - Lidya Zumba",
-  description: "Temukan Instruktur Senam Zumba Aerobik Jakarta profesional untuk kelas menyenangkan dan bugar bersama Lidya! Sebagai Instruktur Zumba Jakarta berpengalaman, Lidya menawarkan sesi Senam Aerobik Jakarta yang energik dan seru. Bergabunglah dalam komunitas Zumba Jakarta untuk gaya hidup sehat dan aktif. Cari tahu jadwal Senam Jakarta dengan Lidya Zumba Jakarta dan Lidya Aerobik Jakarta untuk pengalaman senam terbaik!",
-  type: "website",
+  metadataBase: new URL("https://www.zumbajakarta.com"),
+  title: "Zumba & Aerobik Seru di Jakarta - Lidya Zumba",
+  description: "Mau olahraga tapi malas yang ribet? Coba kelas Zumba & aerobik Jakarta bareng instruktur berpengalaman. Seru, sehat, cocok usia 20–45 tahun!",
+  authors: [{ name: "Lidya Rachmawati" }],
+  robots: "index, follow",
   icons: {
     icon: "/squats.png",
     shortcut: "/squats.png",
@@ -31,10 +33,12 @@ export const metadata = {
         alt: "Instruktur Zumba Aerobik Jakarta",
       },
     ],
-    url: "https://instukturzumbaaerobikjakarta.vercel.app/",
+    url: "https://www.zumbajakarta.com/",
+    siteName: "Instruktu Zumba Jakarta",
+    locale: "id_ID",
+    type: "website",
   },
-  keywords: "Instruktur Zumba Jakarta, Senam Aerobik Jakarta, Zumba Jakarta, Senam Jakarta, Aerobik Jakarta",
-  author: "Lidya Aerobik and Zumba",
+  keywords: "Zumba Jakarta, Aerobik Jakarta, Instruktur Zumba Jakarta, Kelas Zumba Jakarta, Aerobik untuk pemula Jakarta",
 };
 
 export default function RootLayout({ children }) {
@@ -44,14 +48,25 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        <meta name="author" content={metadata.author} />
+        <meta name="author" content={metadata.authors[0].name} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:type" content={metadata.type} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="4Hve-GuRIBqZLbg3Jjm99kKGV3jkgqV1mIWS6FPx0b0" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Zumba & Aerobik Seru di Jakarta - Lidya Zumba" />
+        <meta name="twitter:description" content="Mau olahraga tapi malas yang ribet? Coba kelas Zumba & aerobik Jakarta bareng instruktur berpengalaman. Seru, sehat, cocok usia 20–45 tahun!" />
+        <meta name="twitter:image" content="/squats.png" />
+        <meta name="geo.region" content="ID-JK" />
+        <meta name="geo.placename" content="Jakarta" />
+        <meta name="geo.position" content="-6.2088;106.8456" />
+        <meta name="ICBM" content="-6.2088, 106.8456" />
+
+
         <link rel="icon" href={metadata.icons.icon} />
         <link rel="shortcut icon" href={metadata.icons.shortcut} />
         <link rel="apple-touch-icon" href={metadata.icons.apple} />

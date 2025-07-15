@@ -25,36 +25,52 @@ const bgStyle = {
 
 const BannerData = {
   image: Img1,
-  title: "Why you need to join Zumba Class?",
-  subtitle:
-    "Instruktur Zumba Aerobik Jakarta - Lidya Zumba menghadirkan kelas Zumba yang energik dan menyenangkan untuk meningkatkan kesehatan Anda secara menyeluruh. Dengan gerakan tarian yang penuh energi dan musik yang seru, Zumba membantu membakar kalori, meningkatkan daya tahan tubuh, serta memperkuat otot—semuanya terasa seperti pesta dansa. Sebagai pilihan utama untuk Senam Aerobik Jakarta, Lidya Zumba Jakarta menawarkan pengalaman olahraga yang efektif untuk mengurangi stres dan meningkatkan suasana hati. Cocok untuk semua tingkatan kebugaran, Zumba bersama Lidya membantu meningkatkan fleksibilitas, koordinasi, dan stamina Anda. Bergabunglah sekarang dan temukan jadwal senam terbaik di Jakarta untuk hidup sehat dan aktif!",
+  title: "Kenapa Harus Ikut Kelas Zumba di Jakarta?",
+  subtitle: `
+    Ingin olahraga yang menyenangkan dan efektif? Kelas Zumba Jakarta bersama instruktur Lidya adalah jawabannya! Dengan gerakan dansa enerjik dan musik Latin yang seru, kamu bisa membakar kalori, meningkatkan stamina, dan menjaga kesehatan jantung tanpa merasa terbebani.
+
+    Sebagai instruktur senam aerobik berpengalaman di Jakarta, Lidya menghadirkan suasana kelas yang fun, friendly, dan cocok untuk semua level — dari pemula hingga aktif olahraga.
+
+    Bergabunglah sekarang dan rasakan manfaat senam aerobik untuk kesehatan tubuh dan pikiran. Cari tahu jadwal kelas Zumba terbaik di Jakarta dan mulai hidup lebih aktif hari ini!
+  `,
   link: "#",
 };
 
+
 const Banner2Data = {
   image: Img2,
-  title: "Why you need to join Aerobik Class?",
-  subtitle:
-    "Instruktur Zumba Aerobik Jakarta - Lidya Zumba menawarkan kelas senam Aerobik yang efektif untuk meningkatkan kesehatan dan kebugaran Anda. Dengan gerakan ritmis dan repetitif, Aerobik membantu memperkuat jantung, paru-paru, serta otot Anda, sekaligus meningkatkan daya tahan kardiovaskular dan sirkulasi oksigen dalam tubuh. Sebagai pilihan utama untuk Senam Aerobik Jakarta, sesi bersama Lidya Zumba Jakarta membantu membakar kalori, mendukung penurunan berat badan, serta mengurangi risiko penyakit kronis seperti penyakit jantung, diabetes, dan tekanan darah tinggi. Selain manfaat fisik, Aerobik juga mendukung kesejahteraan mental dengan mengurangi stres, meningkatkan suasana hati, dan menambah energi. Bergabunglah dalam kelas Senam Jakarta untuk hidup sehat, aktif, dan bugar bersama Lidya Aerobik Jakarta!",
+  title: "Manfaat Ikut Kelas Aerobik di Jakarta",
+  subtitle: `
+    Ingin tubuh sehat, bugar, dan bebas stres? Yuk, coba kelas senam aerobik Jakarta bareng instruktur berpengalaman Lidya! Dengan gerakan ritmis dan menyenangkan, senam aerobik bantu memperkuat jantung, paru-paru, dan otot tubuh — cocok untuk semua usia dan tingkat kebugaran.
+
+    Selain membakar kalori dan mendukung penurunan berat badan, aerobik juga bisa menurunkan risiko penyakit jantung, diabetes, dan tekanan darah tinggi. Plus, manfaat mentalnya juga besar: kurangi stres, tingkatkan mood, dan tambah energi positif!
+
+    Bergabunglah dalam kelas aerobik Jakarta sekarang juga, dan rasakan hidup lebih aktif, sehat, dan bahagia bareng Lidya!
+  `,
   link: "#",
 };
+
 
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <div style={bgStyle}>
-        <Navbar />
-        <Hero />
-      </div>
-      <Equipment />
-      <Banner {...BannerData} />
-      <TabComp />
-      <Banner {...Banner2Data} />
-      <Sertification />
-      {/* <Testimonials /> */}
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <main className="overflow-x-hidden">
+        <section style={bgStyle}>
+          <Navbar />
+          <Hero />
+        </section>
+        <section><Equipment /></section>
+        <section><Banner {...BannerData} /></section>
+        <section><TabComp /></section>
+        <section><Banner {...Banner2Data} /></section>
+        <section><Sertification /></section>
+        {/* <Testimonials /> */}
+        <section><Contact /></section>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }

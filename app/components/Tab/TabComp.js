@@ -46,12 +46,12 @@ const TabComp = () => {
                             {/* Image Section */}
                             <Image
                                 src={card.image}
-                                alt={card.title}
+                                alt={card.alt}
                                 className='h-[240px] w-full object-cover'
                             />
                             {/* Text Section */}
                             <div className="p-4">
-                                <p className="text-xl font-semibold">{card.title}</p>
+                                <h3 className="text-xl font-semibold">{card.title}</h3>
                             </div>
                         </motion.div>
                     ))}

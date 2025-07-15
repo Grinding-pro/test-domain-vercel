@@ -68,6 +68,7 @@ export const ProductsData = [
         title: "Aerobic at McDonald Otista",
         info: "info",
         price: "price",
+        alt: "Lidya Aerobic Jakarta"
     },
     {
         id: 2,
@@ -76,6 +77,7 @@ export const ProductsData = [
         title: "Zumba with Wardah",
         info: "info",
         price: "$100",
+        alt: "Lidya Zumba Jakarta"
     },
     {
         id: 3,
@@ -84,6 +86,7 @@ export const ProductsData = [
         title: "Aerobic at Pegadaian Otista",
         info: "info",
         price: "$100",
+        alt: "Lidya Aerobic Jakarta"
     },
     {
         id: 4,
@@ -92,6 +95,7 @@ export const ProductsData = [
         title: "Pesona Zumba dan Aerobic",
         info: "info",
         price: "$100",
+        alt: "Lidya Zumba Jakarta"
     },
     {
         id: 5,
@@ -100,6 +104,7 @@ export const ProductsData = [
         title: "SKJ at Jasamarga",
         info: "info",
         price: "$100",
+        alt: "Lidya SKJ Jakarta"
     },
     {
         id: 6,
@@ -108,6 +113,7 @@ export const ProductsData = [
         title: "Senam Kreasi at RPTRA",
         info: "info",
         price: "$100",
+        alt: "Lidya Senam Kreasi Jakarta"
     },
     {
         id: 7,
@@ -116,6 +122,7 @@ export const ProductsData = [
         title: "Aerobic at McDonald Otista",
         info: "info",
         price: "$100",
+        alt: "Lidya Aerobic Jakarta"
     },
     {
         id: 8,
@@ -124,6 +131,7 @@ export const ProductsData = [
         title: "Zumba at Max Fitness",
         info: "info",
         price: "$100",
+        alt: "Lidya Zumba Jakarta"
     },
     {
         id: 9,
@@ -132,6 +140,7 @@ export const ProductsData = [
         title: "Zumba Party",
         info: "info",
         price: "$100",
+        alt: "Lidya Zumba Jakarta"
     },
     {
         id: 10,
@@ -140,6 +149,7 @@ export const ProductsData = [
         title: "Senam Kreasi at RPTRA",
         info: "info",
         price: "$100",
+        alt: "Lidya Senam Kreasi Jakarta"
     },
     {
         id: 11,
@@ -148,6 +158,7 @@ export const ProductsData = [
         title: "SKJ at Pengadilan Negeri Jakarta",
         info: "info",
         price: "$100",
+        alt: "Lidya SKJ Jakarta"
     },
     {
         id: 12,
@@ -156,6 +167,7 @@ export const ProductsData = [
         title: "SKJ at Rusun Jakarta Timur",
         info: "info",
         price: "$100",
+        alt: "Lidya SKJ Jakarta"
     },
     {
         id: 13,
@@ -164,6 +176,7 @@ export const ProductsData = [
         title: "SKJ at Perpustakan Nasional RI",
         info: "info",
         price: "$100",
+        alt: "Lidya SKJ Jakarta"
     },
 ];
 
